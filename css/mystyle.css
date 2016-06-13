@@ -1,0 +1,43 @@
+html, body{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+body{
+	height: 100%;
+}
+
+#slide-1, #slide-2, #slide-3{
+	height: 100vh;
+}
+
+#slide-1{
+	background-color: blue;
+}
+
+#slide-1-content{
+	height: 90vh;
+}
+
+#website-header{
+	height: 10vh;
+	background-color: black;
+	bottom: 0px;
+	width: 100%;
+}
+
+#slide-2{
+	background-color: red;
+}
+
+#slide-3{
+	background-color: yellow;
+}
+
+#space{
+
+	height: 500px;
+	background-color: blue;
+}
+
