@@ -13,7 +13,30 @@ body{
 }
 
 #slide-1{
-	background-color: blue;
+    width: 100%;
+    margin: 0px auto;
+    background-image: url("../img/slide1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#overlay {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.25); /*can be anything, of course*/
+}
+
+#slide-1-img{
+	position: absolute;
+	height: 90vh;
+	max-width:100%;
+	height:auto;
 }
 
 #slide-1-content{
@@ -22,9 +45,10 @@ body{
 
 #website-header{
 	height: 10vh;
-	background-color: black;
+	background-color: #1E1E1E;
 	bottom: 0px;
 	width: 100%;
+	z-index: 999;
 }
 
 #slide-2{
