@@ -22,7 +22,7 @@ $( document ).ready(function() {
 	});
 
 	/*Fix links when website is being served */
-    $("*[href],[src]").each(function(){
+    /*$("*[href],[src]").each(function(){
     	
     	var replaceLink = function(element, attributeName){
     		var link = $(element).attr(attributeName);
@@ -36,6 +36,6 @@ $( document ).ready(function() {
     	} else{
     		replaceLink($(this), "href");
     	} 
-    });
+    });*/
 
 });
