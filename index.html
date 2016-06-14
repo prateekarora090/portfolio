@@ -2,10 +2,13 @@
 
 <head>
 <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script>
 $( document ).ready(function() {
 	$("*[href],[src]").each(function(){
     	
+    	var _DIRECTORY = "/portfolio/";
+
     	var replaceLink = function(element, attributeName){
     		var link = $(element).attr(attributeName);
     		if(!link.match("^http")){
@@ -21,7 +24,6 @@ $( document ).ready(function() {
     });
 });
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/portfolio-script.js"></script>
 </head>
 
