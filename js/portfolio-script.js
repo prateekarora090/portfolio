@@ -21,21 +21,4 @@ $( document ).ready(function() {
 	    }
 	});
 
-	/*Fix links when website is being served */
-    /*$("*[href],[src]").each(function(){
-    	
-    	var replaceLink = function(element, attributeName){
-    		var link = $(element).attr(attributeName);
-    		if(!link.match("^http")){
-    			$(element).attr(attributeName, _DIRECTORY + link);
-    		} 
-    	}
-
-    	if(typeof $(this).attr("href")==="undefined"){
-    		replaceLink($(this), "src");
-    	} else{
-    		replaceLink($(this), "href");
-    	} 
-    });*/
-
 });
