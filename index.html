@@ -12,7 +12,7 @@ $( document ).ready(function() {
     	var replaceLink = function(element, attributeName){
     		var link = $(element).attr(attributeName);
     		if(!link.match("^http")){
-    			$(element).attr(attributeName, _DIRECTORY + link);
+    			$(element).prop(attributeName, _DIRECTORY + link);
     		} 
     	}
 
