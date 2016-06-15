@@ -93,6 +93,8 @@ body{
 	color: #FCF8E3;
 }
 
+/*-------------------------- SLIDE 1 -----------------------------*/
+
 .slide-1-icon-list{
 	padding-top: 0.4em;
 	font-size: 22px;
@@ -133,7 +135,7 @@ a img{
 	margin: 0px auto;
 }
 
-/* Website Header */
+/*-------------------------- WEBSITE HEADER -----------------------------*/
 #website-header{
 	position: relative;
 	margin: 0;
@@ -206,11 +208,86 @@ a img{
   	width: 100%;
 }
 
+/*-------------------------- SLIDE 2 -----------------------------*/
 #slide-2{
-	background-color: red;
-	height: 100vh;
+	background-color: #2E2E2E;
+	height: 200vh;
+	display: block;
 }
 
+#slide-2-container{
+	height: 200vh;
+}
+
+#slide-2-topic{
+	color: #FCF8E3;
+    font-size: 58px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding-top: 2em;
+    text-shadow: 2px 2px #585232;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+#photo-container{
+	padding-top: 3em;
+}
+
+#map-container{
+	display: table;
+    padding: 0px;
+    padding-right: 0.5em;
+    height: inherit;
+    position: relative;
+    overflow: hidden;
+}
+
+#map-image-container{
+	position: absolute;
+	overflow: hidden;
+    padding: 0px;
+}
+
+#map{
+	float: left;
+    width: 100%;
+    height: auto;
+}
+
+#home-marker{
+	top: 42%;
+    left: 67%;
+    position: absolute;
+    color: #BF497E;
+}
+
+#brown-marker{
+	top: 32%;
+    left: 26%;
+    position: absolute;
+    color: #BF497E;
+}
+
+.photo {
+  display: block;
+  width: 200px;
+  height: 200px;
+  padding-top: 3em;
+  margin: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-border-radius: 99em;
+  -moz-border-radius: 99em;
+  border-radius: 99em;
+  border: 5px solid #eee;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);  
+}
+
+
+
+/*-------------------------- SLIDE 3 -----------------------------*/
 #slide-3{
 	background-color: yellow;
 	height: 100vh;
