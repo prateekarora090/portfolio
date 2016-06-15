@@ -9,6 +9,9 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+<!-- Include Font Awesome -->
+<script src="https://use.fontawesome.com/cc0cb2d342.js"></script>
+
 <!--Include max screen -->
 <link rel="stylesheet" href="css/jquery-maximage.css" type="text/css" media="screen" title="CSS" charset="utf-8" />
 <script src="js/jquery.maximage.js" type="text/javascript"></script>
@@ -19,28 +22,75 @@
 <link rel="stylesheet" type="text/css" href="css/mystyle.css">
 <script type="text/javascript" src="js/portfolio-script.js"></script>
 
+<!-- Load Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'> <!-- 'Dosis', sans-serif; -->
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Poiret+One" rel="stylesheet"> <!-- 'Amatic SC', cursive; --> <!-- 'Poiret One', cursive; -->
+
 </head>
 
 <body>
 
+<style>
+@font-face {
+    font-family: legaueGothic;
+    src: url('LeagueGothic-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: legaueGothic;
+    font-weight: bold;
+    src: url('LeagueGothic-Regular.otf') format("opentype");
+}
+</style>
 <div id="page-body">
 
-	<!--<div id="overlay"></div>-->
 	<!-- Slide 1 -->
 	<div id="slide-1">
 
 		<div id="maximage">
-			<img src="img/slide1.jpg" alt="" />
-    		<img src="img/slide1-2.jpg" alt="" />
-    		<img src="img/slide1-5.jpeg" alt="" />
-    		<img src="img/slide1-6.jpeg" alt="" />\
+			<img src="img/slide1-5-2.jpeg" alt="" />
+			<img src="img/slide1-10.jpeg" alt="" /> <!-- Might change this one -->
+    		<img src="img/slide1-15.jpeg" alt="" />
+    		<img src="img/slide1-16-2.jpeg" alt="" />
+    		<!--1-8-2, 1-6
+    		<!--img src="img/slide1-13/6.jpeg" alt=""-->
 		</div>		
 
-		<!--<div id="slide-1-content-container">
+		<div id="slide-1-content-container">
 			<div id="slide-1-content">
+				<div id="slide-1-content-name">
+					PRATEEK ARORA
+				</div>
+				<div id ="slide-1-content-title">
+					developer
+				</div>
+				<div id = "slide-1-content-icons">
+					<ul class="slide-1-icon-list">
+						<li>
+							<a href="#" class="portfolio-icon">
+		    					<i class="fa fa-linkedin display-icon" aria-hidden="true" ></i>
+		    					<i class="fa fa-linkedin-square hover-icon" aria-hidden="true" style="display:none;"></i>
+							</a>
+						</li>
 
+						<li>
+						<a href="#" class="portfolio-icon">
+	    					<i class="fa fa-github display-icon" aria-hidden="true"></i>
+	    					<i class="fa fa-github-square hover-icon" aria-hidden="true" style="display:none;"></i>
+						</a>
+						</li>
+
+						<li>
+						<a href="#" class="portfolio-icon">
+	    					<i class="fa fa-envelope-o display-icon" aria-hidden="true"></i>
+	    					<i class="fa fa-envelope hover-icon" aria-hidden="true" style="display:none;"></i>
+						</a>
+						</li>
+					</ul>
+					
+				</div>
 			</div>
-		</div>-->
+		</div>
 
 	</div>
 
@@ -80,7 +130,7 @@ $(function() {
         cycleOptions: {
             fx: 'fadeZoom',
             //sync: false,
-            speed: 2000,
+            speed: 2500,
             timeout: 8000,
             prev: '#arrow_left',
             next: '#arrow_right',

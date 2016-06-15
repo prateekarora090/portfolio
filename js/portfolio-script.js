@@ -1,7 +1,12 @@
 $( document ).ready(function() {
     var distance = $('#website-header').offset().top,
     $window = $(window);
-    var _DIRECTORY = "/portfolio/";
+    //var _DIRECTORY = "/portfolio/";
+
+    $(".portfolio-icon").hover(function(){
+    	$(this).find(".display-icon").toggle();
+    	$(this).find(".hover-icon").toggle();
+    });
 
     /* Header Position Render */
     /*$window.scroll(function() {

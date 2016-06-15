@@ -8,6 +8,17 @@ body{
 	height: 100%;
 }
 
+/*@font-face {
+    font-family: legaueGothic;
+    src: url(fonts/LeagueGothic-Regular.otf) format("opentype");
+}
+
+@font-face {
+    font-family: legaueGothic;
+    font-weight: bold;
+    src: url(fonts/LeagueGothic-Regular.otf) format("opentype");
+}*/
+
 #slide-1, #slide-2, #slide-3{
 	/*height: 100vh;*/
 }
@@ -23,6 +34,7 @@ body{
     height: 100vh;
     position: relative;
     margin: 0px auto;
+    background-color: rgba(0,0,0,0.65);
 }
 
 #slide-1-content-container{
@@ -34,18 +46,80 @@ body{
 	height: 100%;
 	margin: 0 auto;
 	text-align: center;
+	width: 100%;
 }
 
 #slide-1-content{
 	vertical-align: middle;
 	display: table-cell;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	color: #FCF8E3;
+}
+
+#slide-1-content-name{
+	font-family: 'Amatic SC', cursive;
+	font-weight: bold;
+	font-size: 55px;
+}
+
+#slide-1-content-title{
+	font-family: 'Amatic SC', cursive;
+	font-size: 22px;
+}
+
+#slide-1-content-icons{
+}
+
+.portfolio-icon:hover, .portfolio-icon:visited, .portfolio-icon:active {
+	text-decoration: none;
+}
+
+.display-icon:hover, .display-icon:visited, .display-icon:active {
+	text-decoration: none;
+}
+
+.hover-icon:hover, .hover-icon:visited, .hover-icon:active {
+	text-decoration: none;
+}
+
+.portfolio-icon .display-icon{
+	color: #FCF8E3
+}
+
+.portfolio-icon .hover-icon{
+	color: #FCF8E3;
+}
+
+.slide-1-icon-list{
+	padding-top: 0.4em;
+	font-size: 22px;
+	padding-left: 0;
+	color: white;
+}
+
+.slide-1-icon-list li{
+	display: inline;
+	padding-left: 0.3em;
+	padding-right: 0.3em;
+}
+
+.portfolio-icon span
+{
+  text-decoration: none;
+}
+
+a img{
+	border: 0 none;
 }
 
 #website-header{
 	position: relative;
 	margin: 0;
 	border: 0;
-	background-color: #4F444A;//#1E1E1E;
+	background-color: #1E1E1E;//#4F444A;//#1E1E1E;
 	height: 70px;
 	/*bottom: 0px;
 	width: 100%;
