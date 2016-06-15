@@ -9,6 +9,10 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+<!-- Include Bootstrap 4 -->
+<!--<link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" integrity="sha384-XXXXXXXX" crossorigin="anonymous">
+<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js" integrity="sha384-XXXXXXXX" crossorigin="anonymous"></script>-->
+
 <!-- Include Font Awesome -->
 <script src="https://use.fontawesome.com/cc0cb2d342.js"></script>
 
@@ -25,6 +29,7 @@
 <!-- Load Fonts -->
 <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'> <!-- 'Dosis', sans-serif; -->
 <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Poiret+One" rel="stylesheet"> <!-- 'Amatic SC', cursive; --> <!-- 'Poiret One', cursive; -->
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'><!--Open Sans', sans-serif;-->
 
 </head>
 
@@ -47,15 +52,17 @@
 	<!-- Slide 1 -->
 	<div id="slide-1">
 
+		<!-- Image Slider -->
 		<div id="maximage">
 			<img src="img/slide1-5-2.jpeg" alt="" />
-			<img src="img/slide1-10.jpeg" alt="" /> <!-- Might change this one -->
-    		<img src="img/slide1-15.jpeg" alt="" />
+			<img src="img/slide1-15.jpeg" alt="" />
     		<img src="img/slide1-16-2.jpeg" alt="" />
+			<img src="img/slide1-10.jpeg" alt="" /> <!-- Might change this one -->
     		<!--1-8-2, 1-6
     		<!--img src="img/slide1-13/6.jpeg" alt=""-->
 		</div>		
 
+		<!-- Slide Content -->
 		<div id="slide-1-content-container">
 			<div id="slide-1-content">
 				<div id="slide-1-content-name">
@@ -94,10 +101,61 @@
 
 	</div>
 
-	<!-- Website Header -->
-	<div id="website-header-container">
-		<div id="website-header" class="navbar navbar-default navbar-fixed-top" data-top-top="position:fixed;top:0;" data-bottom="position:relative;">
-		</div>	
+	<!-- Website Header/NavBar -->
+	<div id="website-header-container"> <!--data-top-top="position:fixed;top:0;width:100%;" data-bottom="position:static;">-->
+
+		<nav class="navbar" data-toggle="sticky-onscroll">
+      		<div class="container" id="website-header">
+        		<div class="navbar-header">
+          			<div id="website-banner-name" href="#">
+      					PRATEEK ARORA
+      				</div>
+        		</div>
+
+
+        		<div class="collapse navbar-collapse">
+
+   	 				<ul class="nav navbar-nav navbar-right">
+
+   	 					<li>
+   	 						<a href="#" class="">
+   	 							About
+   	 						</a>
+   	 					</li>
+
+   	 					<li>
+   	 						<a href="#" class="">
+   	 							Skills
+   	 						</a>
+   	 					</li>
+
+   	 					<li>
+   	 						<a href="#" class="">
+   	 							Experience
+   	 						</a>
+   	 					</li>
+
+   	 					<li>
+   	 						<a href="#" class="">
+   	 							Education
+   	 						</a>
+   	 					</li>
+
+   	 					<li>
+   	 						<a href="#" class="">
+   	 							Contact
+   	 						</a>
+   	 					</li>
+
+   	 				</ul>
+
+    			</div>
+
+      		</div>
+    	</nav> 
+
+	</div>	
+
 	</div>
 
 	<div id="slide-2" data-start="background-color: green;">
@@ -130,8 +188,8 @@ $(function() {
         cycleOptions: {
             fx: 'fadeZoom',
             //sync: false,
-            speed: 2500,
-            timeout: 8000,
+            speed: 1000,
+            timeout: 4000,
             prev: '#arrow_left',
             next: '#arrow_right',
             pager: '#cycle-nav ul',

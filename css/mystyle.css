@@ -86,7 +86,7 @@ body{
 }
 
 .portfolio-icon .display-icon{
-	color: #FCF8E3
+	color: #FCF8E3;
 }
 
 .portfolio-icon .hover-icon{
@@ -115,22 +115,6 @@ a img{
 	border: 0 none;
 }
 
-#website-header{
-	position: relative;
-	margin: 0;
-	border: 0;
-	background-color: #1E1E1E;//#4F444A;//#1E1E1E;
-	height: 70px;
-	/*bottom: 0px;
-	width: 100%;
-	z-index: 999;*/
-}
-
-#website-header-container{
-	height: 70px;
-	margin-top: -70px;
-}
-
 #overlay {
     z-index: 1;
     height: 100%;
@@ -149,10 +133,78 @@ a img{
 	margin: 0px auto;
 }
 
-#slide-1-content{
-	/**max-height: 90vh;**/
+/* Website Header */
+#website-header{
+	position: relative;
+	margin: 0;
+	border: 0;
+	background-color: #1E1E1E;//#4F444A;//#1E1E1E;
+	width: 100%;
+    margin: 0 auto;
+    height: 70px;
 }
 
+#website-header-container{
+	height: 70px;
+	margin-top: -70px;
+}
+
+#website-banner-name{
+	font-size: 34px;
+    line-height: 1.2;
+	font-family: 'Amatic SC', cursive;
+	color: #FCF8E3;
+	font-weight: 100;
+	letter-spacing: 3px;
+}
+
+.navbar{
+	border: 0px;
+}
+
+.navbar ul.nav{
+	margin: 20px auto 0px auto;
+}
+
+.navbar-header {
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.navbar-default .navbar-toggle{
+	padding: 0;
+    margin: 0px auto;
+    border: 0;
+}
+
+.navbar-nav>li>a{
+	color: #FCF8E3;
+	display: block;
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 0px;
+	transition: all 0.3s ease-out 0s;
+	letter-spacing: 1px;
+	font-family: 'Dosis', sans-serif;
+}
+
+.navbar-nav>li>a:hover{
+	color: black;
+}
+
+.nav>li>a:focus, .nav>li>a:hover{
+	background-color: #1E1E1E;
+    color: #948484;//#FFC0CB;
+}
+
+.sticky.is-sticky {
+ 	position: fixed;
+ 	left: 0;
+  	right: 0;
+  	top: 0;
+  	z-index: 1000;
+  	width: 100%;
+}
 
 #slide-2{
 	background-color: red;
