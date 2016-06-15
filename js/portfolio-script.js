@@ -3,10 +3,14 @@ $( document ).ready(function() {
     $window = $(window);
     //var _DIRECTORY = "/portfolio/";
 
+    //Change icons on homepage
     $(".portfolio-icon").hover(function(){
     	$(this).find(".display-icon").toggle();
     	$(this).find(".hover-icon").toggle();
     });
+
+    //Enable local scroll for navigation links
+    $.localScroll();
 
     var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
     	var stickyHeight = sticky.outerHeight();
@@ -37,6 +41,8 @@ $( document ).ready(function() {
     	// On page load
     	stickyToggle(sticky, stickyWrapper, $(window));
   	});
+
+
     
     /* Header Position Render */
     /*$window.scroll(function() {

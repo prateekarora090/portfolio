@@ -10,11 +10,15 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 <!-- Include Bootstrap 4 -->
-<!--<link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" integrity="sha384-XXXXXXXX" crossorigin="anonymous">
-<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js" integrity="sha384-XXXXXXXX" crossorigin="anonymous"></script>-->
+<link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" integrity="sha384-XXXXXXXX" crossorigin="anonymous">
+<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js" integrity="sha384-XXXXXXXX" crossorigin="anonymous"></script>
 
 <!-- Include Font Awesome -->
 <script src="https://use.fontawesome.com/cc0cb2d342.js"></script>
+
+<!-- Include localScroll.js -->
+<script src="js/jquery.localScroll.js"></script>
+<script src="js/jquery.scrollTo.js"></script>
 
 <!--Include max screen -->
 <link rel="stylesheet" href="css/jquery-maximage.css" type="text/css" media="screen" title="CSS" charset="utf-8" />
@@ -33,7 +37,7 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <style>
 @font-face {
@@ -107,8 +111,10 @@
 		<nav class="navbar" data-toggle="sticky-onscroll">
       		<div class="container" id="website-header">
         		<div class="navbar-header">
-          			<div id="website-banner-name" href="#">
-      					PRATEEK ARORA
+          			<div id="website-banner-name">
+          				<a href="#page-body">
+      						PRATEEK ARORA
+      					</a>
       				</div>
         		</div>
 
@@ -118,13 +124,13 @@
    	 				<ul class="nav navbar-nav navbar-right">
 
    	 					<li>
-   	 						<a href="#" class="">
+   	 						<a href="#slide-2" class="">
    	 							About
    	 						</a>
    	 					</li>
 
    	 					<li>
-   	 						<a href="#" class="">
+   	 						<a href="#slide-3" class="">
    	 							Skills
    	 						</a>
    	 					</li>
@@ -166,9 +172,6 @@
 					ABOUT ME
 			</div>
 
-			<div class ="container-fluid" id="slide-2-container">
-
-				<div class ="col-md-5" id="map-container" data-600-center-top="transform: scale(0.8); opacity: 0" data-900-center-center="transform: scale(1); opacity: 1">
 					<div id = "map-image-container">
 						<img id = "map" class="img-responsive" src ="img/dotted-map.png">
 
@@ -179,7 +182,10 @@
 						<i class="fa fa-graduation-cap fa-lg" id="brown-marker" aria-hidden="true"></i>
 
 					</div>
-					
+
+			<div class ="container-fluid" id="slide-2-container">
+
+				<div class ="col-md-5">
 				</div>
 
 				<div class="col-md-2">

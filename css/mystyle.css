@@ -160,6 +160,11 @@ a img{
 	letter-spacing: 3px;
 }
 
+#website-banner-name>a{
+	color: #FCF8E3;
+    text-decoration: none;
+}
+
 .navbar{
 	border: 0px;
 }
@@ -190,11 +195,16 @@ a img{
 	font-family: 'Dosis', sans-serif;
 }
 
-.navbar-nav>li>a:hover{
+.navbar-nav>li>a:hover, .navbar-nav>li>a:focus, .navbar-nav>li>a:active{
 	color: black;
 }
 
-.nav>li>a:focus, .nav>li>a:hover{
+.nav>li>a:focus, .nav>li>a:hover, .nav>li>a:active{
+	background-color: #1E1E1E;
+    color: #948484;//#FFC0CB;
+}
+
+li.active>a{
 	background-color: #1E1E1E;
     color: #948484;//#FFC0CB;
 }
@@ -235,11 +245,11 @@ a img{
 }
 
 #map-container{
-	display: table;
+	display: block;
     padding: 0px;
     padding-right: 0.5em;
     height: inherit;
-    position: relative;
+    position: static;
     overflow: hidden;
 }
 
@@ -250,9 +260,11 @@ a img{
 }
 
 #map{
-	float: left;
     width: 100%;
     height: auto;
+    opacity: 0.7;
+    width: 91%;
+    margin: auto;
 }
 
 #home-marker{
