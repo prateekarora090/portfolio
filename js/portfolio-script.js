@@ -4,7 +4,7 @@ $( document ).ready(function() {
     var _DIRECTORY = "/portfolio/";
 
     /* Header Position Render */
-    $window.scroll(function() {
+    /*$window.scroll(function() {
 	    if ( $window.scrollTop() >= distance ) {
 	        // Your div has reached the top
 	        $('#website-header').css({
@@ -19,6 +19,6 @@ $( document ).ready(function() {
 	        	"position": "static"
 	        });
 	    }
-	});
+	});*/
 
 });
