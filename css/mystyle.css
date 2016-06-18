@@ -319,7 +319,7 @@ li.active>a{
     width: 21em;
     height: 28em;
     margin: auto;
-    background-color: #C1C0C0;
+    background-color: #bfbebe;
     -webkit-transition-duration: 0.6s;
     -moz-transition-duration: 0.6s;
     -o-transition-duration: 0.6s;
@@ -337,7 +337,7 @@ li.active>a{
     margin: 0px;
     color: #669999;
     background-color: #669999;/*FCF8E3*/
-    padding: 4em 2em;
+    padding: 2em 2em;
     text-align: center;
     border-radius: 1.4em 1.4em 0 0;
     -webkit-border-radius: 1.4em 1.4em 0 0;
@@ -351,12 +351,23 @@ li.active>a{
 	background-color: #C1C0C0;
 }
 
+.about-lower-half .about-content{
+  display: table-cell;
+  color: #2E2E2E;
+  text-align: center;
+  padding: 2em;
+  padding-top: 16%;
+  font-family: 'Dosis', sans-serif;
+  font-size: large;
+  font-weight: 20;
+}
+
 #about-me{
   overflow: auto;
   padding-top: 10em;
   padding-bottom: 56em;
   //background: linear-gradient(to left, #737373 , #8C8B8B);
-  background-color: #CCCCCC;
+  background-color: #d0cece;
 }
 
 /*#about-1{
@@ -373,6 +384,7 @@ li.active>a{
 
 .about-img{
 	margin: auto;
+  height: 8em;
 }
 
 
