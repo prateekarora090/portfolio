@@ -234,7 +234,7 @@ li.active>a{
 	overflow: auto;
 }
 
-#slide-2-topic{
+.slide-topic{
 	 color: #FCF8E3;
     font-size: 58px;
     text-align: center;
@@ -396,10 +396,9 @@ li.active>a{
   left: 0px;
   width: 100%;
   height: 100%;
-  z-index: -999;
 }
 
-#background-overlay {
+.background-overlay {
     z-index: -998;
     height: 100%;
     width: 100%;
@@ -414,8 +413,19 @@ li.active>a{
 /*-------------------------- SLIDE 3 -----------------------------*/
 #slide-3{
 	background-color: #2E2E2E;
-	height: 100vh;
+	height: 120vh;
   margin-top: 40vh;
+}
+
+#slide-3-topic{
+    color: #FCF8E3;
+    font-size: 58px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding-top: 2em;
+    text-shadow: 2px 2px #585232;
+    font-family: 'Amatic SC', sans-serif;
 }
 
 #space{
@@ -423,4 +433,16 @@ li.active>a{
 	height: 500px;
 	background-color: blue;
 }
+
+/*-------------------------- SLIDE 4 -----------------------------*/
+#slide-4{
+  background-color: #d0cece;
+  height: 100vh;
+  margin-top: 40vh;
+}
+
+#experience-topic{
+  color: #669999;
+}
+
 

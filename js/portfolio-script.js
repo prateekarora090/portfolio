@@ -1,5 +1,4 @@
 $( document ).ready(function() {
-    //var distance = $('#website-header').offset().top,
     $window = $(window);
     //var _DIRECTORY = "/portfolio/";
 
@@ -42,6 +41,26 @@ $( document ).ready(function() {
     	stickyToggle(sticky, stickyWrapper, $(window));
   	});
 
+    /*
+    $window.scroll(function() {
+
+      var distance = $('#slide-3').offset().top,
+
+      if ( $window.scrollTop() >= distance ) {
+          // Your div has reached the top
+          $('#background-1').css({
+            "opacity": "0"
+          });
+      }
+
+      if ( $window.scrollTop() <= distance ) {
+          // Your div has reached the top
+          $('#background-1').css({
+            "opacity": "1"
+          });
+      }
+    });
+    */    
 
     
     /* Header Position Render */
