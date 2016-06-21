@@ -23,6 +23,9 @@ body{
 	/*height: 100vh;*/
 }
 
+body{
+  height: auto !important;
+}
 
 #maximage{
 	display: block;
@@ -438,7 +441,6 @@ li.active>a{
 #slide-4{
   background-color: #2E2E2E;
   margin-top: 40vh;
-  padding-bottom: 10em;
 }
 
 .work-experience{
@@ -503,7 +505,6 @@ li.active>a{
     top: 50%;
     width: 160px;
     color: white;
-
     /*color: white;
     padding: 5px 5px 5px 5px;
     background-color: blue;
@@ -518,9 +519,16 @@ li.active>a{
     width: 50px;
     height: 50px;
     border-radius: 100%;
-    margin: 10px auto;
+    margin: 0px auto; 
     background-color: #4cbfbf;
     color: #ffffff;
+}
+
+.icon-wrapper{
+  padding: 10px 0 10px 0;
+  background-color: #2E2E2E;
+  z-index: 1;
+  display: inline-block
 }
 
 .experience-icon-check{
@@ -565,8 +573,10 @@ li.active>a{
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+}
+
+#experience-topic{
+  padding-bottom: 20vh;
 }
 
 .work-experience-title{
@@ -582,6 +592,7 @@ li.active>a{
 .work-experience-text{
     color: #222222;
     margin: 20px;
+    font-family: 'Dosis', sans-serif;
 }
 
 .work-experience-content{
@@ -590,4 +601,121 @@ li.active>a{
     padding-bottom: 0;
 }
 
+/*-------------------------- SLIDE 5 -----------------------------*/
+#slide-5{
+  background-color: #2E2E2E;
+  margin-top: 30vh;
+  height: 100vh;
+}
 
+#contact-text{
+  font-size: 17px;
+  font-family: 'Dosis', sans-serif;
+}
+
+.contact-icon{
+  margin: auto;
+}
+
+.contact-icon-wrapper{
+  text-align: center;
+}
+
+.contact-icons{
+  padding-top: 10em;
+}
+
+
+/*-------*/
+/* Reset */
+@import url(//codepen.io/chrisdothtml/pen/ojLzJK.css);
+
+.social-buttons {
+  padding-top: 20vh;
+  height: 120px;
+  margin: auto;
+  font-size: 0;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.social-button {
+  display: inline-block;
+  background-color: #f9f6e9;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  margin: 0 50px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  opacity: .99;
+  border-radius: 28%;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
+.social-button:before {
+  content: '';
+  background-color: #000;
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  top: 90%;
+  left: -110%;
+  transform: rotate(45deg);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
+.social-button .fa {
+  font-size: 55px;
+  vertical-align: middle;
+  line-height: 120px;
+  transform: scale(0.8);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
+.social-button.linkedin:before {
+  background-color: #0274B3;
+}
+
+.social-button.linkedin .fa {
+  color: #0274B3;
+}
+
+.social-button.github:before {
+  background-color: #3CF;
+}
+
+.social-button.github .fa {
+  color: #3CF;
+}
+
+.social-button.envelope:before {
+  background-color: #DC4A38;
+}
+
+.social-button.envelope .fa {
+  color: #DC4A38;
+}
+
+.social-button.mobile:before {
+  background-color: #F26798;
+}
+
+.social-button.mobile .fa {
+  color: #F26798;
+}
+
+.social-button:focus:before, .social-button:hover:before {
+  top: -10%;
+  left: -10%;
+}
+
+.social-button:focus .fa, .social-button:hover .fa {
+  color: #fff;
+  transform: scale(1);
+}
