@@ -460,11 +460,13 @@ li.active>a{
 .item-left{
   position: relative;
   float: left;
+  padding-bottom: 15vh;
 }
 
 .item-right{
   position: relative;
   float: right;
+  padding-bottom: 15vh;
 }
 
 .space{
@@ -480,13 +482,26 @@ li.active>a{
     border-radius: 10px;
 }
 
+.work-experience-item:nth-child(2n) {
+    float: right;
+}
+
+.work-experience-item:nth-child(2n) .space {
+  margin-left: 90px;
+  margin-right: 0;
+}
+
+.work-experience-item:nth-child(2n) .center-text {
+  left: auto;
+  right: 100%;
+}
+
 .center-text{
     left: 100%;
     margin: -95px 11px 0 11px;
     position: absolute;
     top: 50%;
     width: 160px;
-    z-index: 1000;
     color: white;
 
     /*color: white;
@@ -514,7 +529,7 @@ li.active>a{
     margin-top: 10px;
     border-radius: 100%;
     width: 30px;
-    height: 30px;\
+    height: 30px;
 }
 
 .arrow-right{
@@ -522,6 +537,18 @@ li.active>a{
     border-style: solid;
     border-width: 9px;
     left: 100%;
+    margin-top: -11px;
+    position: absolute;
+    top: 50%;
+    width: 0px;
+    height: 0px;
+}
+
+.arrow-left{
+    border-color: rgba(0, 0, 0, 0) #FFFFFF rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    border-style: solid;
+    border-width: 9px;
+    right: 100%;
     margin-top: -11px;
     position: absolute;
     top: 50%;
