@@ -417,7 +417,8 @@ li.active>a{
 /*-------------------------- SLIDE 3 -----------------------------*/
 #slide-3{
 	background-color: #2E2E2E;
-	height: 120vh;
+	min-height: 1000px;
+  height: auto;
   margin-top: 40vh;
 }
 
@@ -437,6 +438,240 @@ li.active>a{
 	height: 500px;
 	background-color: blue;
 }
+
+#skills-chart ul{
+  list-style: none;
+}
+
+#chart-legend{
+    float: right;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#skills-chart #chart-legend {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 1200px){
+    #skills-chart {
+        margin-top: 180px;
+    } 
+}
+@media screen and (min-width: 1024px){
+  #skills-chart {
+    margin-top: 120px;
+    margin-bottom: 100px;
+    width: 938px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  #skills-chart #chart-legend {
+    float: right;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #skills-chart #chart-legend li {
+    position: absolute;
+    left: 0;
+    float: none;
+    background: 0;
+    border-bottom: 1px solid #aaa;
+    width: 100%;
+  }
+
+  #skills-chart #chart-legend .legend-label {
+    position: static;
+    float: right;
+    top: auto;
+    left: auto;
+    display: block;
+    font-size: .95em;
+    line-height: 1.1;
+    -webkit-transform: rotate(0deg);
+    -webkit-transform-origin: 0 0;
+    -moz-transform: rotate(0deg);
+    -moz-transform-origin: 0 0;
+    -ms-transform: rotate(0deg);
+    -ms-transform-origin: 0 0;
+    -o-transform: rotate(0deg);
+    -o-transform-origin: 0 0;
+    transform: rotate(0deg);
+    transform-origin: 0 0;
+    width: 18.5%;
+    padding-top: 4px;
+    height: 33px;
+    border-right: 5px solid #000;
+    margin-top: 16px;
+    text-align: left;
+    color: #FCF8E3;
+  }
+
+  #skills-chart #chart-legend .label{
+    color: white;
+  }
+
+  #skills-chart #chart-legend li#label-1 {
+    top: 220px;
+  }
+
+  #skills-chart #chart-legend li#label-2 {
+    top: 165px;
+  }
+  
+  #skills-chart #chart-legend li#label-3 {
+    top: 110px;
+  }
+
+  #skills-chart #chart-legend li#label-4 {
+    top: 55px;
+  }
+
+  #skills-chart #chart-legend li#label-5 {
+    top: 0;
+  }
+
+  #skills-chart #chart-legend li#label-1 .legend-label {
+    border-right-color: #f44b00;
+  }
+
+  #skills-chart #chart-legend li#label-2 .legend-label {
+    border-right-color: #f4b800;
+  }
+
+  #skills-chart #chart-legend li#label-3 .legend-label {
+    border-right-color: #beca7d;
+  }
+
+  #skills-chart #chart-legend li#label-4 .legend-label {
+    border-right-color: #8ebd7b;
+  }
+
+  #skills-chart #chart-legend li#label-5 .legend-label {
+    background: url('../img/darth-vader.svgz') no-repeat 120px 5px;
+    padding: 4px 0 0 0;
+    -webkit-background-size: 35px;
+    -moz-background-size: 35px;
+    -o-background-size: 35px;
+    background-size: 35px;
+  }
+
+  #skills-chart #chart-data {
+    float: left;
+    padding-top: 0;
+    margin: 0;
+    background: url('../img/chart-border.svgz') no-repeat 100% 100%;
+    width: 80%;
+  }
+
+  #skills-chart #chart-data li {
+    float: left;
+    background: url('../img/chart-border.svgz') no-repeat 0 100%;
+    border-left: 0 none;
+    border-bottom: 1px solid #000;
+    height: 220px;
+    position: relative;
+    margin-top: 54px;
+  }
+
+  #skills-chart #chart-data .data-label {
+    position: absolute;
+    bottom: -25px;
+    left: 52%;
+    line-height: 1;
+    font-size: 1em;
+    margin-left: 0;
+    -webkit-transform: rotate(45deg);
+    -webkit-transform-origin: 0 0;
+    -moz-transform: rotate(45deg);
+    -moz-transform-origin: 0 0;
+    -ms-transform: rotate(45deg);
+    -ms-transform-origin: 0 0;
+    -o-transform: rotate(45deg);
+    -o-transform-origin: 0 0;
+    transform: rotate(45deg);
+    transform-origin: 0 0;
+    width: 300px;
+  }
+
+  #skills-chart #chart-data .data-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url('../img/bar.svgz') no-repeat 50% 0;
+  }
+
+  #skills-chart #chart-data #bar-1 .data-bar {
+    width: 100%;
+    height: 85%;
+  }
+
+  #skills-chart #chart-data #bar-2 .data-bar {
+    width: 100%;
+    height: 85%;
+  }
+
+  #skills-chart #chart-data #bar-3 .data-bar {
+    width: 100%;
+    height: 85%;
+  }
+
+  #skills-chart #chart-data #bar-4 .data-bar {
+    width: 100%;
+    height: 85%;
+  }
+
+  #skills-chart #chart-data #bar-5 .data-bar {
+    width: 100%;
+    height: 85%;
+  }
+
+  #skills-chart #chart-data #bar-6 .data-bar {
+    width: 100%;
+    height: 85%;
+  }
+
+  #skills-chart #chart-data #bar-7 .data-bar {
+    width: 100%;
+    height: 85%;
+  }
+
+  #skills-chart #chart-data #bar-8 .data-bar {
+    width: 100%;
+    height: 85%;
+  }
+
+  #skills-chart #chart-data #bar-9 .data-bar {
+    width: 100%;
+    height: 85%;
+  }
+
+  #skills-chart #chart-data #bar-10 .data-bar {
+    width: 100%;
+    height: 85%;
+  }
+
+}
+
+//Data heights horizontally
+#skills-chart #chart-data #bar01 .data-bar {
+    width: 85%;
+}
+
+#skills-chart #chart-data {
+    padding-top: 30px;
+    margin: 0;
+    background: url('../img/skills-chart-hbar-grid.svgz') no-repeat 0 100%;
+}
+
 
 /*-------------------------- SLIDE 4 -----------------------------*/
 #slide-4{
