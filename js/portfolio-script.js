@@ -36,6 +36,27 @@ $( document ).ready(function() {
     	$(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {
       		stickyToggle(sticky, stickyWrapper, $(this));
     	});
+
+      //Contact Buttons for copying links
+      $(".contact-button").click(function(){
+          
+          //Find the link to be copied
+          var holdtext = $(this).data("link-text");
+          
+          //Copy link using a text element
+          var $temp = $("<input>");
+          $("body").append($temp);
+          $temp.val(holdtext).select();
+          document.execCommand("copy");
+          $temp.remove();
+
+          //Update the button to say copied and the others to go back to the original text
+          $.each($(".contact-button").not(this), function(){
+            $(this).text($(this).data("copy-text"));
+          });
+          $(this).text("COPIED");
+      });
+
     
     	// On page load
     	stickyToggle(sticky, stickyWrapper, $(window));

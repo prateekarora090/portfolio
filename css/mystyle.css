@@ -25,6 +25,7 @@ body{
 
 body{
   height: auto !important;
+  -webkit-font-smoothing: antialiased;
 }
 
 #maximage{
@@ -605,33 +606,16 @@ li.active>a{
 #slide-5{
   background-color: #2E2E2E;
   margin-top: 30vh;
-  height: 100vh;
+  min-height: 100vh;
 }
-
-#contact-text{
-  font-size: 17px;
-  font-family: 'Dosis', sans-serif;
-}
-
-.contact-icon{
-  margin: auto;
-}
-
-.contact-icon-wrapper{
-  text-align: center;
-}
-
-.contact-icons{
-  padding-top: 10em;
-}
-
 
 /*-------*/
 /* Reset */
 @import url(//codepen.io/chrisdothtml/pen/ojLzJK.css);
 
 .social-buttons {
-  padding-top: 20vh;
+  display: -webkit-box;
+  padding-top: 10vh;
   height: 120px;
   margin: auto;
   font-size: 0;
@@ -640,6 +624,16 @@ li.active>a{
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.slide-5-topic{
+  padding-top: 70px;
+}
+
+@media screen and ( min-height: 600px ){
+    .slide-5-topic{
+      padding-top: 140px;
+    }
 }
 
 .social-button {
@@ -718,4 +712,114 @@ li.active>a{
 .social-button:focus .fa, .social-button:hover .fa {
   color: #fff;
   transform: scale(1);
+}
+
+[class*="fx-"]:not(.fx-dyna) {
+    position: relative;
+    z-index: 1;
+    -webkit-transition-delay: 0.2s !important;
+    transition-delay: 0.2s !important;
+    overflow: hidden;
+}
+
+.ctrl-standard.fx-sliderIn {
+    color: #81aaa4;
+    border-color: #81aaa4;
+}
+
+
+
+[class*="fx-"], [class*="fx-"]:hover {
+    -webkit-transition: color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
+}
+
+.typ-subhed {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0;
+}
+
+[class*="ctrl-"] {
+    padding: 5ox 10px;
+    border-radius: 2px;
+    border: 1px solid #231f20;
+}
+
+[class*="ctrl-"] {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 2px;
+}
+
+button {
+    width: auto;
+    vertical-align: middle;
+    font: inherit;
+    text-align: center;
+    background: none;
+    white-space: nowrap;
+    -webkit-appearance: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.contact-button{
+  margin-top: 1.3em;
+  font-family: 'Dosis', sans-serif !important;
+  color: #f9f6e9 !important;
+  border-color: #f9f6e9 !important;
+}
+
+.contact-button:hover{
+  color: #231f20 !important;
+  font-weight: bold;
+}
+
+.contact-button::after{
+  background: #f9f6e9 !important;
+}
+
+.contact-container{
+  display: -webkit-box;
+}
+
+#contact-text{
+  font-size: 17px;
+  font-family: 'Dosis', sans-serif;
+}
+
+.contact-icon{
+  margin: auto;
+}
+
+.contact-icon-wrapper{
+  text-align: center;
+}
+
+.contact-icons{
+  padding-top: 10em;
+}
+
+#linkedin-copy:hover{
+  color: #0274B3 !important;
+}
+
+#skype-copy:hover{
+  color: #3CF !important;
+}
+
+#mail-copy:hover{
+  color: #DC4A38 !important;
+}
+
+#mobile-copy:hover{
+  color: #F26798 !important;
 }
