@@ -852,12 +852,44 @@ li.active>a{
   -webkit-animation-timing-function: linear;
 }
 
+@media screen and (max-width: 992px) and (min-width: 768px){
+  
+  .coursework-circle{
+    height: 150px !important;
+    width: 150px !important;
+  }
+
+  .coursework-div{
+    height: 130px !important;
+    width: 130px !important;
+  }
+
+}
+
+@media screen and (max-width: 768px){
+  
+  .coursework-circle{
+    height: 110px !important;
+    width: 110px !important;
+  }
+
+  .coursework-div{
+    height: 90px !important;
+    width: 90px !important;
+  }
+
+}
+
+#coursework{
+  background-image: url('../img/confectionary.png') background-repeat 0;
+}
+
 .coursework-circle{
   height: 200px;
   width: 200px;
   border-radius: 100px;
   color: white;
-  opacity: 0.8;
+  opacity: 1;
   position:relative;
 }
 
@@ -869,6 +901,7 @@ li.active>a{
 }
 
 .coursework-circle .coursework-text{
+  opacity: 1 !important;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -894,23 +927,23 @@ li.active>a{
 }
 
 .coursework-div #circle-1{
-  background-color: rgba(220, 74, 56,0.8);
+  background-color: rgba(220, 74, 56,0.6);
 }
 
 .coursework-div #circle-2{
-  background-color: rgba(242, 103, 152,0.7);
+  background-color: rgba(242, 103, 152,0.6);
 }
 
 .coursework-div #circle-3{
-  background-color: rgba(51,204,255,0.8);
+  background-color: rgba(51,204,255,0.6);
 }
 
 .coursework-div #circle-4{
-  background-color: rgba(2,116,179,0.8);
+  background-color: rgba(2,116,179,0.6);
 }
 
 .coursework-div #circle-5{
-  background-color: rgba(84,82,82,0.8);
+  background-color: rgba(84,82,82,0.6);
 }
 /*-------------------------- SLIDE 4 -----------------------------*/
 #slide-4{
@@ -1125,6 +1158,10 @@ li.active>a{
     .social-buttons-wrapper{
         width: initial !important;
     }
+
+    .contact-button{
+      margin-top: 10px !important;
+    }
 }
 
 @media screen and ( min-width: 1026px ){
@@ -1269,13 +1306,12 @@ button {
 }
 
 .contact-button{
-  margin-top: 1.3em;
   font-family: 'Dosis', sans-serif !important;
   color: #d2cdb9 !important;
   border-color: #d2cdb9 !important;
   margin: auto;
   display: table-cell;
-  margin-top: 10px !important;
+  margin-top: 25px;
 }
 
 .contact-button:hover{
