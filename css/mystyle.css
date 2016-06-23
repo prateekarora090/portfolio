@@ -531,8 +531,6 @@ li.active>a{
     position: relative;
     overflow: hidden;
     background: url('../img/bar-horizontal.png') no-repeat 100% !important;
-    //-webkit-transform:rotate(90deg);
-    //-moz-transform:rotate(90deg);
   }
 
   #skills-chart #chart-data #bar-1 .data-bar {
@@ -1085,6 +1083,13 @@ li.active>a{
   min-height: 100vh;
 }
 
+@media screen and (max-width: 768px){
+  #slide-5{
+    height: 140%;
+  }
+}
+
+
 /*-------*/
 /* Reset */
 @import url(//codepen.io/chrisdothtml/pen/ojLzJK.css);
@@ -1102,6 +1107,10 @@ li.active>a{
   right: 0;
 }
 
+.social-buttons-wrapper{
+  margin: auto;
+}
+
 .slide-5-topic{
   padding-top: 70px;
 }
@@ -1109,6 +1118,18 @@ li.active>a{
 @media screen and ( min-height: 600px ){
     .slide-5-topic{
       padding-top: 140px;
+    }
+}
+
+@media screen and ( max-width: 1026px ){
+    .social-buttons-wrapper{
+        width: initial !important;
+    }
+}
+
+@media screen and ( min-width: 1026px ){
+    .social-buttons-wrapper{
+        width: 100%;
     }
 }
 
@@ -1252,6 +1273,9 @@ button {
   font-family: 'Dosis', sans-serif !important;
   color: #d2cdb9 !important;
   border-color: #d2cdb9 !important;
+  margin: auto;
+  display: table-cell;
+  margin-top: 10px !important;
 }
 
 .contact-button:hover{
@@ -1264,7 +1288,14 @@ button {
 }
 
 .contact-container{
-  display: -webkit-box;
+  //display: -webkit-box;
+  margin-top: 15px;
+  display: table;
+  position: relative;
+}
+
+.contact-container a{
+  margin: auto;
 }
 
 #contact-text{
