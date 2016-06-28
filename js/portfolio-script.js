@@ -1,8 +1,8 @@
 $( document ).ready(function() {
     $window = $(window);
 
-    $('#page-body').show();
     $('#slide-1').css('background-color', 'rgba(0,0,0,0.65)');
+    $('#page-body').show();
     $('#loading-overlay').fadeOut();
     //$('#loading-overlay').detach();
 
