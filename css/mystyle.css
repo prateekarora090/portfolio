@@ -233,11 +233,24 @@ a img{
 	border: 0px;
 }
 
+.navbar-collapse{
+  text-align: center;
+}
+
+.navbar-nav>li {
+  display: inline-block;
+}
+
 .navbar ul.nav{
+  width: inherit;
+  display: inline-table !important;
+  float: none;
+  text-align: center;
 	margin: 20px auto 0px auto;
 }
 
 .navbar-header {
+    position: absolute;
     padding-top: 15px;
     padding-left: 10px;
 }
@@ -266,6 +279,18 @@ a img{
 .nav>li>a:focus, .nav>li>a:hover, .nav>li>a:active{
 	background-color: #1E1E1E;
     color: #948484;//#FFC0CB;
+}
+
+#header-resume a{
+  position: absolute;
+  right: 0px;
+  color: #FCF8E3;
+  display: inline-table;
+  text-align: center;
+}
+
+#header-resume a:hover{
+  color: #948484;
 }
 
 li.active>a{
