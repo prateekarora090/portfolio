@@ -1,5 +1,10 @@
 $( document ).ready(function() {
     $window = $(window);
+
+    $('#page-body').show();
+    $('#loading-overlay').fadeOut();
+    //$('#loading-overlay').detach();
+
     //var _DIRECTORY = "/portfolio/";
 
     //Change icons on homepage

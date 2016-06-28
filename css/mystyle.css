@@ -19,6 +19,66 @@ body{
     src: url(fonts/LeagueGothic-Regular.otf) format("opentype");
 }*/
 
+/* Spinner */
+
+#loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to left, #a0a4a5 , #8C8B8B);
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  z-index: 11;
+}
+
+.spinner {
+   position: fixed;
+  top: 30%;
+  left: 50%;
+
+  width: 40px;
+  height: 40px;
+
+  margin: 100px auto;
+  z-index: 2;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #333;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+/*---Slides----*/
 #slide-1, #slide-2, #slide-3{
 	/*height: 100vh;*/
 }
