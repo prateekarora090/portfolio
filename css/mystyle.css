@@ -287,6 +287,9 @@ a img{
   color: #FCF8E3;
   display: inline-table;
   text-align: center;
+  font-weight: 900;
+  font-size: 18px;
+  font-family: 'Dosis', sans-serif;
 }
 
 #header-resume a:hover{
@@ -309,6 +312,7 @@ li.active>a{
 
 /*-------------------------- SLIDE 2 -----------------------------*/
 #slide-2{
+  padding-top: 3em;
 	background-color: #2E2E2E;
 	height: auto;
 	display: block;
@@ -322,15 +326,19 @@ li.active>a{
 #slide-2-content{
 }
 
+.slide-topic::first-letter{
+  font-size: 52px;
+}
+
 .slide-topic{
 	  color: #FCF8E3;
-    font-size: 58px;
+    font-size: 40px;
     text-align: center;
-    letter-spacing: 1px;
-    font-weight: bold;
+    letter-spacing: 2px;
+    font-weight: lighter;
     padding-top: 2em;
     text-shadow: 2px 2px #585232;
-    font-family: 'Amatic SC', sans-serif;
+    font-family: 'Dosis', sans-serif;
 }
 
 #photo-container{
@@ -548,6 +556,7 @@ li.active>a{
 
 #skills-chart #chart-data .data-label{
   color: #FCF8E3;
+  font-family: 'Dosis', sans-serif;;
 }
 
 .clearfix:before, .clearfix:after {
@@ -705,6 +714,7 @@ li.active>a{
     transform-origin: 100% 0;
     width: 200px;
     text-align: right;
+    font-family: 'Open Sans Condensed', sans-serif;;
 }
 
 @media screen and (min-width: 1024px){
@@ -992,6 +1002,7 @@ li.active>a{
   text-align: center;
   width: inherit;
   padding: 0 5px 0 5px;
+  font-family: 'Dosis', sans-serif;;
 }
 
 #coursework ul li{
@@ -1165,6 +1176,9 @@ li.active>a{
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
+  font-family: 'Dosis', sans-serif;;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 #experience-topic{
@@ -1179,12 +1193,20 @@ li.active>a{
 .work-experience-title h4{
     margin-bottom: 12px;
     text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+}
+
+.work-experience-title h5{
+    font-family: 'Dosis', sans-serif;
 }
 
 .work-experience-text{
     color: #222222;
     margin: 20px;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    font-size: 13px;
 }
 
 .work-experience-content{
@@ -1256,7 +1278,7 @@ li.active>a{
 
 .social-button {
   display: inline-block;
-  background-color: #f9f6e9;
+  background-color: #e0ddcf;
   width: 120px;
   height: 120px;
   line-height: 120px;
@@ -1342,7 +1364,7 @@ li.active>a{
 
 .ctrl-standard.fx-sliderIn {
     color: #81aaa4;
-    border-color: #81aaa4;
+    border-color: #b3b3b3;
 }
 
 
@@ -1392,7 +1414,7 @@ button {
 .contact-button{
   font-family: 'Dosis', sans-serif !important;
   color: #d2cdb9 !important;
-  border-color: #d2cdb9 !important;
+  border-color: #a5a298 !important;
   margin: auto;
   display: table-cell;
   margin-top: 25px;
