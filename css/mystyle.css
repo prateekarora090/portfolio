@@ -424,7 +424,12 @@ li.active>a{
     -moz-border-radius: 1.4em 1.4em 0.7em 0.7em;
     border-radius: 1.4em 1.4em 0.7em 0.7em;
     border-collapse: separate;
+}
 
+@media screen and (max-width: 992px){
+.about{
+  margin-bottom: 80px;
+}
 }
 
 .about-upper-half{
@@ -605,10 +610,28 @@ li.active>a{
 
 /* ---- */
 
+@media screen and (max-width: 992px){
+  
+  .coursework-text{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 9px 0 9px;
+  }
+
+}
+
 @media screen and (max-width: 1024px){
   #skills-chart #chart-legend li {
       height: 1900px;
       border-right: 1px solid #FCF8E3;
+  }
+
+  #slide-3 .slide-topic{
+      padding-bottom: 40px !important;
+  }
+
+  .legend-label{
+    font-size: 16px !important;
   }
 
   #chart-data li{
@@ -617,6 +640,12 @@ li.active>a{
 
   .data-label{
     height: 1431px;
+    font-size: 25px !important;
+  }
+
+  .coursework-text{
+    font-size: 19px;
+    font-weight: 600;
   }
 
   #skills-chart #chart-data .data-bar {
@@ -968,8 +997,12 @@ li.active>a{
   }
 
   .coursework-div{
-    height: 90px !important;
-    width: 90px !important;
+    height: 115px !important;
+    width: 115px !important;
+  }
+
+  .coursework-text {
+    font-size: 16px;
   }
 
 }
@@ -1268,6 +1301,12 @@ li.active>a{
     .contact-button{
       margin-top: 10px !important;
     }
+}
+
+@media screen and ( max-width: 768px ){
+  .contact-button{
+  margin-bottom: 20px !important;
+  }
 }
 
 @media screen and ( min-width: 1026px ){

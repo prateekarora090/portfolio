@@ -11,10 +11,29 @@ $( document ).ready(function() {
 
     //var _DIRECTORY = "/portfolio/";
 
+    if ($(window).width() <= 1024) {
+        $(".fa-2x").removeClass("fa-2x").addClass("fa-lg");
+        $("#boston-marker").css('font-size', '1.1em');
+      }
+
     //Change icons on homepage
     $(".portfolio-icon").hover(function(){
     	$(this).find(".display-icon").toggle();
     	$(this).find(".hover-icon").toggle();
+    });
+
+
+    //Enable skrollr depending on size of screen
+    // initialize skrollr if the window width is large enough
+    if ($(window).width() > 767) {
+      skrollr.init({smoothScrolling: false});
+    }
+
+    // disable skrollr if the window is resized below 768px wide
+    $(window).on('resize', function () {
+      if ($(window).width() <= 767) {
+        skrollr.init().destroy(); // skrollr.init() returns the singleton created above
+      }
     });
 
     //Enable local scroll for navigation links
