@@ -1,9 +1,11 @@
-$( document ).ready(function() {
-    $window = $(window);
-
+$(window).on("load", function(){
     $('#slide-1').css('background-color', 'rgba(0,0,0,0.65)');
     $('#page-body').show();
     $('#loading-overlay').fadeOut();
+});
+
+$( document ).ready(function() {
+    $window = $(window);
     //$('#loading-overlay').detach();
 
     //var _DIRECTORY = "/portfolio/";
