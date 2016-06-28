@@ -2,6 +2,7 @@ $( document ).ready(function() {
     $window = $(window);
 
     $('#page-body').show();
+    $('#slide-1').css('background-color', 'rgba(0,0,0,0.65)');
     $('#loading-overlay').fadeOut();
     //$('#loading-overlay').detach();
 
