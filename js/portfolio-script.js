@@ -1,7 +1,8 @@
 $(window).on("load", function(){
     $('#slide-1').css('background-color', 'rgba(0,0,0,0.65)');
-    $('#page-body').show();
-    $('#loading-overlay').fadeOut();
+    $('#page-body').delay(200).fadeIn(400);
+    $('.spinner').fadeOut(700);
+    $('#loading-overlay').delay(400).css('z-index', '0').delay(300).detach();
 });
 
 $( document ).ready(function() {

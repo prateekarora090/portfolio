@@ -25,11 +25,11 @@ body{
   position: fixed;
   top: 0;
   left: 0;
-  background: linear-gradient(to left, #a0a4a5 , #8C8B8B);
+  background: linear-gradient(to left, #898c8b , #9a9a9a);
   width: 100vw;
   height: 100vh;
   opacity: 1;
-  z-index: 11;
+  z-index: 1;
 }
 
 .spinner {
@@ -37,8 +37,8 @@ body{
   top: 30%;
   left: 50%;
 
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 
   margin: 100px auto;
   z-index: 2;
@@ -48,7 +48,7 @@ body{
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #333;
+  background-color: #212121;
   opacity: 0.6;
   position: absolute;
   top: 0;
