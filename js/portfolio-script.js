@@ -24,18 +24,28 @@ $( document ).ready(function() {
 
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
       skrollr.init().destroy();
+
+      var $background = $("<div class=\"background-image\" id=\"background-1\" style=\"z-index: -999;\"><div class =\"background-overlay\"></div></div>");
+      $("#slide-2").after($background);
     }
         //Add skrollr mobile on mobile devices.
         //document.write('<script type="text/javascript" src="js/skrollr.mobile.min.js"><\/script>');
     else{
         skrollr.init({smoothScrolling: false});
 
-        var $img2 = $("<img src=\"img/slide1-15-min.jpeg\" style=\"background-color: rgba(0,0,0,0.65);\" alt=\"\" />");
+        //Add extra images to main scroller
         var $img3 = $("<img src=\"img/slide1-16-2-min.jpeg\" style=\"background-color: rgba(0,0,0,0.65);\" alt=\"\" />");
         var $img4 = $("<img src=\"img/slide1-10-min.jpeg\" style=\"background-color: rgba(0,0,0,0.65);\" alt=\"\" />");
-        $('#maximage').append($img2);
         $('#maximage').append($img3);
         $('#maximage').append($img4);
+
+        //Add background images
+        var $backgroundImage1 = $("<div class=\"background-image\" id=\"background-1\" style=\"background-image: url('img/slide1-8-2-min.jpeg'); z-index: -999;\" data-anchor-target=\"#about-me\" data-bottom-top= \"opacity: 1;\" alt=\"\" <div class =\"background-overlay\"></div></div>");
+        $('#slide-2').after($backgroundImage1);
+
+        var $backgroundImage2 = $("<div class=\"background-image\" id=\"background-2\" style=\"background-image: url('img/slide1-14-min.jpeg'); z-index: -998;\"   data-anchor-target=\"#slide-3\" data-top-top= \"opacity: 1;\" data-1-bottom-bottom= \"opacity: 0;\" alt=\"\"><div class =\"background-overlay\"></div></div>");
+        $('#slide-3').after($backgroundImage2);
+
     }
 
     //Enable skrollr depending on size of screen
