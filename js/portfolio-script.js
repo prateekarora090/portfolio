@@ -22,14 +22,22 @@ $( document ).ready(function() {
     	$(this).find(".hover-icon").toggle();
     });
 
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      skrollr.init().destroy();
+    }
+        //Add skrollr mobile on mobile devices.
+        //document.write('<script type="text/javascript" src="js/skrollr.mobile.min.js"><\/script>');
+    else{
+        skrollr.init({smoothScrolling: false});
+    }
 
     //Enable skrollr depending on size of screen
     // initialize skrollr if the window width is large enough
-    if ($(window).width() > 767) {
+    /*if ($(window).width() > 767) {
       skrollr.init({smoothScrolling: false});
     } else{
       skrollr.init().destroy();
-    }
+    }*/
 
     // disable skrollr if the window is resized below 768px wide
     $(window).on('resize', function () {
