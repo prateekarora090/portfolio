@@ -27,6 +27,8 @@ $( document ).ready(function() {
     // initialize skrollr if the window width is large enough
     if ($(window).width() > 767) {
       skrollr.init({smoothScrolling: false});
+    } else{
+      skrollr.init().destroy();
     }
 
     // disable skrollr if the window is resized below 768px wide
