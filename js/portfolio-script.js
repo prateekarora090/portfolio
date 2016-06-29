@@ -29,6 +29,13 @@ $( document ).ready(function() {
         //document.write('<script type="text/javascript" src="js/skrollr.mobile.min.js"><\/script>');
     else{
         skrollr.init({smoothScrolling: false});
+
+        var $img2 = $("<img src=\"img/slide1-15-min.jpeg\" style=\"background-color: rgba(0,0,0,0.65);\" alt=\"\" />");
+        var $img3 = $("<img src=\"img/slide1-16-2-min.jpeg\" style=\"background-color: rgba(0,0,0,0.65);\" alt=\"\" />");
+        var $img4 = $("<img src=\"img/slide1-10-min.jpeg\" style=\"background-color: rgba(0,0,0,0.65);\" alt=\"\" />");
+        $('#maximage').append($img2);
+        $('#maximage').append($img3);
+        $('#maximage').append($img4);
     }
 
     //Enable skrollr depending on size of screen
