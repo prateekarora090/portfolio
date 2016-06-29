@@ -410,6 +410,137 @@ li.active>a{
   box-shadow: 0 8px 10px rgba(5, 3, 4, 22.3);
 }
 
+@media screen and (max-width: 420px){
+  
+  .display-photo{
+    margin-top: 3em;
+  }
+  
+  #photo-container {
+    padding-top: 11em;
+    padding-bottom: 6em;
+  }
+
+  #boston-marker{
+    top: 30.2%;
+    left: 30.4%;
+  }
+
+  .about{
+    width: 19em !important;
+    height: 25em !important;
+  }
+
+  #slide-3{
+    margin-top: 0vh !important;
+  }
+
+  #coursework ul{
+    margin-left: 20vw !important;
+  }
+
+  #coursework ul li:last-child .coursework-div{
+    margin-left: 55px;
+  }
+
+  .work-experience{
+    background: none !important;
+  }
+
+  #experience-topic {
+    padding-bottom: 5vh !important;
+}
+
+  .arrow-right{
+    display: none;
+  }
+
+  .arrow-left{
+    display: none;
+  }
+
+  .icon-wrapper{
+    display: none !important;
+  }
+
+  .center-text{
+    position: static !important;
+    top: 0px !important;
+    width: 100% !important;
+    margin: 0px 0px 0px 0px !important;
+  }
+
+  .work-experience-item .item-left{
+    width: 100vw;
+  }
+
+  .work-experience-item .item-right{
+    width: 100vw;
+  } 
+
+  .timestamp{
+    height: 40px;
+    vertical-align: middle;
+    line-height: 37px;
+    border-radius: 6px 6px 0px 0px !important;
+  } 
+
+  .item-left{
+    float: none !important;
+    width: 75vw !important;
+    margin: auto;
+    padding-bottom: 8vh !important;
+  }
+
+  .item-right{
+    float: none !important;
+    width: 75vw !important;
+    margin: auto;
+    padding-bottom: 8vh !important;
+  }
+
+  .work-experience-item{
+    float: none !important;
+    width: inherit !important;
+    margin: auto;
+    position: relative;
+  }
+
+  .work-experience-item .space{
+    margin: auto !important;
+  }
+
+  .work-experience-item:nth-child(2n) .space {
+    margin: auto !important;  
+  }
+
+  #slide-5{
+    height: 155% !important;
+  }
+
+}
+
+@media screen and (max-height: 420px){
+  .display-photo{
+    margin-top: 11em;
+  }
+  #photo-container {
+    padding-top: 11em;
+    padding-bottom: 6em;
+  }
+  #boston-marker{
+    top: 30.2%;
+    left: 30.4%;
+  }
+  #slide-3{
+    margin-top: 0vh !important;
+  }
+
+  #slide-5 {
+    height: 250% !important;
+  }
+}
+
 .about{
     display: block;
     width: 21em;

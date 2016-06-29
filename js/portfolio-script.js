@@ -11,9 +11,14 @@ $( document ).ready(function() {
 
     //var _DIRECTORY = "/portfolio/";
 
-    if ($(window).width() <= 1024) {
+    if ($(window).width() <= 1024 && $(window).width()>400 ) {
         $(".fa-2x").removeClass("fa-2x").addClass("fa-lg");
         $("#boston-marker").css('font-size', '1.1em');
+      }
+    
+    if($(window).width()<=400){
+        $(".fa-2x").removeClass("fa-2x").addClass("fa-sm");
+        $("#boston-marker").css('font-size', '0.9em');
       }
 
     //Change icons on homepage
@@ -25,7 +30,7 @@ $( document ).ready(function() {
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
       skrollr.init().destroy();
 
-      var $background = $("<div class=\"background-image\" id=\"background-1\" style=\"z-index: -999;\"><div class =\"background-overlay\"></div></div>");
+      var $background = $("<div class=\"background-image\" id=\"background-1\" style=\"z-index: -999;\"><div class =\"background-overlay\" style=\"z-index: -998;\"></div></div>");
       $("#slide-2").after($background);
     }
         //Add skrollr mobile on mobile devices.
